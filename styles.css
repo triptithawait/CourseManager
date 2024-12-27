@@ -97,8 +97,129 @@ body {
   
   .chart-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
   }
   
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar .nav-links li {
+    margin-left: 20px;
+  }
+
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .navbar .nav-links a:hover {
+    color: #6ded80;
+  }
+
+  .login-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .login-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+
+  .form-group input:focus {
+    border-color: #3faa22;
+    outline: none;
+    box-shadow: 0 0 5px rgba(4, 187, 41, 0.5);
+  }
+
+  .btn {
+    background-color: #04ae12;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .btn:hover {
+    background-color: #25e64c;
+    transform: scale(1.05);
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  p a {
+    color: #141a12;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  p a:hover {
+    text-decoration: underline;
+    color: #2dbd09;
+  }
   
