@@ -5,6 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faculty</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #1d1c1c;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar .nav-links li {
+      margin: 0 15px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background: #f6f3f3;
+      color: rgb(255, 255, 255);
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      padding: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: rgb(27, 19, 19);
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .faculty-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .faculty-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faculty-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .faculty-box h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .faculty-box p {
+      margin: 10px 0 0;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,10 +124,10 @@
     <div class="navbar-container">
       <a href="#" class="logo">Course Manager</a>
       <ul class="nav-links">
-        <li><a href="#login">Login</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#review">Review</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="review.html">Review</a></li>
       </ul>
     </div>
   </nav>
@@ -36,23 +147,23 @@
       <div class="faculty-container">
         <div class="faculty-box">
           <h3>John Doe</h3>
-          <p>Subject: Web Development</p>
+          <p>Web Development</p>
         </div>
         <div class="faculty-box">
           <h3>Jane Smith</h3>
-          <p>Subject: Data Science</p>
+          <p>Data Science</p>
         </div>
         <div class="faculty-box">
           <h3>Robert Brown</h3>
-          <p>Subject: AI and ML</p>
+          <p>AI and ML</p>
         </div>
         <div class="faculty-box">
           <h3>Emily Johnson</h3>
-          <p>Subject: Machine Learning</p>
+          <p>Machine Learning</p>
         </div>
         <div class="faculty-box">
           <h3>Michael Davis</h3>
-          <p>Subject: Cloud Computing</p>
+          <p>Cloud Computing</p>
         </div>
       </div>
     </div>
@@ -60,3 +171,4 @@
 
 </body>
 </html>
+

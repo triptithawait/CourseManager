@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">Course Manager</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="review.html">Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Submit a Review</h1>
+
+      <!-- Review Form -->
+      <form id="reviewForm">
+        <label for="reviewName">Your Name:</label>
+        <input type="text" id="reviewName" placeholder="Enter your name" required>
+        
+        <label for="reviewMessage">Your Review:</label>
+        <textarea id="reviewMessage" placeholder="Write your review here" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Recent Reviews</h2>
+      <!-- Reviews Section -->
+      <div id="reviewsSection" class="reviews-section">
+        <p>No reviews yet. Be the first to write a review!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="review.js"></script>
+</body>
+</html>
